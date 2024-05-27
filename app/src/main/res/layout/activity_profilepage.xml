@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilepage">
+
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Information Form"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/carmine"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginBottom="20dp"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_below="@id/etName"
+            android:layout_marginBottom="10dp"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_below="@id/etAge"
+            android:layout_marginBottom="10dp"
+            android:hint="Gender"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_below="@id/etGender"
+            android:layout_marginBottom="10dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress" />
+
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_below="@id/etAddress"
+            android:layout_marginBottom="10dp"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:layout_marginBottom="10dp"
+            android:hint="Occupation"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:layout_marginBottom="10dp"
+            android:hint="Education level"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:layout_below="@id/etEducation"
+            android:layout_marginBottom="10dp"
+            android:hint="Weight (kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_row="10"
+            android:layout_column="0"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Height (cm)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etMaritalstatus"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_row="11"
+            android:layout_column="0"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Marital Status"
+            android:inputType="numberDecimal" />
+
+
+        <Spinner
+            android:id="@+id/spinnerMedicalHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="12"
+            android:layout_column="0"
+            android:layout_below="@id/etHeight"
+            android:layout_marginBottom="20dp"
+            android:prompt="@string/select_medical_history" />
+
+
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_row="13"
+            android:layout_column="0"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="@color/carmine"
+            android:padding="7dp"
+            android:text="Submit"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_row="14"
+            android:layout_column="0"
+            android:layout_marginLeft="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="@color/carmine"
+            android:padding="7dp"
+            android:text="Logout"
+            android:textSize="18dp" />
+
+
+    </GridLayout>
+
+</LinearLayout>

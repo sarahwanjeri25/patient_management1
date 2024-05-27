@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="654dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="77dp"
+
+        android:backgroundTint="#93F3FF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/logo1" />
+
+        <TextView
+            android:id="@+id/introtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:text="Welcome to PMS"
+            android:textColor="@color/cerise"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <Button
+            android:id="@+id/btnnxtpage1"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/introtxt"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="@color/carmine"
+            android:padding="7dp"
+            android:text="Continue"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
